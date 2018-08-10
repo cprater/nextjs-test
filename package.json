@@ -5,9 +5,10 @@
   "author": "cprater <cprater23@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production next build",
+    "build": "next build",
     "dev": "node server.js",
-    "start": "next"
+    "start": "next start",
+    "postbuild": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.3",
